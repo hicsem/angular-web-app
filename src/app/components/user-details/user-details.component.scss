@@ -1,0 +1,185 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #eaeded;
+}
+.cardContainer {
+  width: 100%;
+  background: #eaeded;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userContainer {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  z-index: 20;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.2s;
+}
+.userInfos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  border-right: 1px solid grey;
+}
+.userUserName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #202020;
+  margin-bottom: 0.5rem;
+}
+.userImage {
+  width: 250px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.userName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #202020;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  align-self: center;
+}
+.userDesc {
+  font-size: 0.9rem;
+  color: #202020;
+  margin-bottom: 0.5rem;
+}
+.userCompany {
+  font-size: 0.9rem;
+  color: #202020;
+  margin-bottom: 0.5rem;
+}
+.userProfile {
+  text-decoration: none;
+  background: #004d6b;
+  color: white;
+  padding: 0.3rem 1rem;
+}
+.userDetails {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.followers {
+  font-size: 0.8rem;
+  font-weight: bold;
+  //   background: #327dd3;
+  background: #2f86fd;
+  padding: 0.2rem 1rem;
+  margin-bottom: 0.5rem;
+  color: white;
+  border-radius: 0.1rem;
+}
+.following {
+  font-size: 0.8rem;
+  font-weight: bold;
+  background: #00af52;
+  padding: 0.2rem 1rem;
+  margin-bottom: 0.5rem;
+  color: white;
+  border-radius: 0.1rem;
+}
+.publicGists {
+  font-size: 0.8rem;
+  font-weight: bold;
+  background: #ffba2f;
+  padding: 0.2rem 1rem;
+  margin-bottom: 0.5rem;
+  color: white;
+  border-radius: 0.1rem;
+}
+.publicRepos {
+  font-size: 0.8rem;
+  font-weight: bold;
+  background: #ff4644;
+  padding: 0.2rem 1rem;
+  margin-bottom: 0.5rem;
+  color: white;
+  border-radius: 0.1rem;
+}
+.location {
+  padding: 0.2rem 0;
+  margin-bottom: 0.5rem;
+}
+.email {
+  padding: 0.2rem 0;
+  margin-bottom: 0.5rem;
+}
+.memberSince {
+  padding: 0.2rem 0;
+  margin-bottom: 0.5rem;
+}
+
+.repos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: white;
+  // max-width: 500px;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  z-index: 20;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.reposContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.repoText {
+  align-self: center;
+}
+.repoContainer {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid grey;
+}
+.repoName {
+  text-decoration: none;
+  color: #d84f00;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.repoDesc {
+  font-size: 0.9rem;
+  color: grey;
+}
+.repoReach {
+  display: flex;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+.stars {
+  font-size: 0.9rem;
+  color: rgb(0, 134, 187);
+  white-space: nowrap;
+  margin-right: 0.5rem;
+}
+.watchers {
+  font-size: 0.9rem;
+  color: rgb(0, 134, 187);
+  white-space: nowrap;
+  margin-right: 0.5rem;
+}
+.forks {
+  font-size: 0.9rem;
+  color: rgb(0, 134, 187);
+  white-space: nowrap;
+  margin-right: 0.5rem;
+}

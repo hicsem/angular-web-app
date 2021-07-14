@@ -1,0 +1,17 @@
+<main class="mainContainer">
+  <div class="usersContainer">
+    <article
+      class="cardContainer"
+      *ngFor="let user of users"
+      (click)="showUserDetails(user.login)"
+    >
+      <img
+        class="cardImage"
+        src="{{ user.avatar_url }}"
+        alt="{{ user.login }}"
+      />
+      <h3 class="cardUsername">{{ user.login }}</h3>
+    </article>
+    <p class="errorMessage">{{ errorMsg }}</p>
+  </div>
+</main>

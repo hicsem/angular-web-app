@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="cardContainer">
+    <article class="userContainer">
+      <div class="userInfos">
+        <h1 class="userUserName">{{ user.login }}</h1>
+        <img
+          class="userImage"
+          src="{{ user.avatar_url }}"
+          alt="{{ user.login }}"
+        />
+        <h2 class="userName" *ngIf="user.name">{{ user.name }}</h2>
+        <p class="userCompany" *ngIf="user.company">
+          Company : {{ user.company | slice: 0:20 }}
+        </p>
+        <p class="userDesc" *ngIf="user.bio">
+          Bio : {{ user.company | slice: 0:20 }}
+        </p>
+        <a href="{{ user.html_url }}" target="_blank" class="userProfile"
+          >Github Profile</a
+        >
+      </div>
+      <div class="userDetails">
+        <div class="followers">{{ user.followers }} Followers</div>
+        <div class="following">{{ user.following }} Following</div>
+        <div class="publicGists">{{ user.public_gists }} Public gists</div>
+        <div class="publicRepos">{{ user.public_repos }} Public Repos</div>
+        <div class="location" *ngIf="user.location">
+          Location : {{ user.location }}
+        </div>
+        <div class="email" *ngIf="user.email">Email : {{ user.email }}</div>
+        <div class="memberSince">
+          Member Since : {{ user.created_at | date: "dd/MM/yyyy" }}
+        </div>
+      </div>
+    </article>
+    <div *ngIf="repos.length > 0" class="repos">
+      <h1 class="repoText">Repos</h1>
+      <div class="reposContainer">
+        <div *ngFor="let repo of repos" class="repoContainer">
+          <div>
+            <a href="{{ repo.html_url }}" target="_blank" class="repoName">
+              {{ repo.name }}
+            </a>
+            <p class="repoDesc">{{ repo.description | slice: 0:20 }}</p>
+          </div>
+          <div class="repoReach">
+            <div class="stars">stars : {{ repo.stargazers_count }}</div>
+            <div class="watchers">watchers : {{ repo.watchers_count }}</div>
+            <div class="forks">forks : {{ repo.forks_count }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

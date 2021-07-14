@@ -1,0 +1,28 @@
+<header class="headerContainer">
+  <div class="logoContainer" routerLink="/">
+    <img
+      class="logoImage"
+      src="https://plumsail.com/static/api-feature-9cb3c46df7ffa160799a5d8fffb437c2.png"
+      alt=""
+    />
+  </div>
+  <div class="searchContainer">
+    <form class="searchForm" #form="ngForm" (ngSubmit)="onSubmit(form)">
+      <input class="searchInput" name="search" ngModel placeholder="Search" />
+      <button class="searchButton">Search</button>
+    </form>
+  </div>
+  <nav>
+    <ul>
+      <li>
+        <a
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Home</a
+        >
+      </li>
+      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+    </ul>
+  </nav>
+</header>
