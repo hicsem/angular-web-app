@@ -12,6 +12,6 @@
       />
       <h3 class="cardUsername">{{ user.login }}</h3>
     </article>
-    <p class="errorMessage">{{ errorMsg }}</p>
+    <p *ngIf="errorMsg" class="errorMessage">{{ errorMsg }}</p>
   </div>
 </main>
